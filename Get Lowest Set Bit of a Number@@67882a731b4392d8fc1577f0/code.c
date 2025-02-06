@@ -9,7 +9,7 @@ int main() {
         return 1;
     }
     int position = 1;
-    while ((num & 1) == 0) {
+    while ((num & 1) == 1) {
         num >>= 1;
     }
     printf("%d", position);
