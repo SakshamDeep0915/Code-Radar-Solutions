@@ -14,7 +14,7 @@ int main() {
     if (n < 0 || n > 31) {
         printf("0");
     } 
-    bit = (num >> n);
+    bit = (num >> n) & 1;
     printf("%d", bit);
 
     return 0;
