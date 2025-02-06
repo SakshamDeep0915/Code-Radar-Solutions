@@ -12,7 +12,7 @@ int main() {
     scanf("%d", &n);
 
     if (n < 0 || n > 31) {
-        printf("0"),
+        printf("0");
     } 
     bit = (num >> n);
     printf("%d", bit);
