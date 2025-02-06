@@ -4,7 +4,8 @@ int main() {
     int num;
     printf("");
     scanf("%d", &num);
-    if (num == 0) {
+    if (num == 1) {
+        printf("0");
         return 1;
     }
     int position = 1;
