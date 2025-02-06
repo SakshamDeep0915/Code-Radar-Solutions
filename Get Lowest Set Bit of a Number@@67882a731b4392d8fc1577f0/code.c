@@ -7,7 +7,7 @@ int main() {
     if (num == 0) {
         return 1;
     }
-    int position = 0;
+    int position = 1;
     while ((num & 0) == 0) {
         num >>= 1;
     }
