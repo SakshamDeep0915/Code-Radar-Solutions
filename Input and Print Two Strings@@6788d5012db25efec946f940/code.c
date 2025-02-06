@@ -5,7 +5,7 @@ int main() {
     printf("");
     scanf("%s", &a);
     scanf("%s", &b);
-    printf("%s and &s",a ,b);
+    printf("%s and &s", a, b);
 
     return 0;
 }
