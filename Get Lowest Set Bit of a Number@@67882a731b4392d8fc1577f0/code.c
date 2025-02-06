@@ -10,7 +10,7 @@ int main() {
     int position = 1;
     while ((num & 1) == 0) {
         num >>= 1;
-        position++i;
+        position ++;
     }
     printf("%d", position);
     return 0;
