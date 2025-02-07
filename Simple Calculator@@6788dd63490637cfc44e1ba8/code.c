@@ -17,6 +17,7 @@ int main() {
             result = num1 / num2;
         else
             printf("error");
+            return 1;
        } else {
             printf("error");
         }
