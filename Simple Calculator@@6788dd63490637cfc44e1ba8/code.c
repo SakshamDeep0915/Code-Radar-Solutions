@@ -13,11 +13,11 @@ int main() {
     } else if (operator == '*') {
         result = num1 * num2;
     } else if (operator == '/') {
-        if (num2 != 0) {
-        result = num1 / num2;
-        } else {
+        if (num2 != 0) 
+            result = num1 / num2;
+        else
             printf("error");
-        } else {
+       } else {
             printf("error");
         }
         printf("%d", result);
