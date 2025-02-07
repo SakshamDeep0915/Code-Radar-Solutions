@@ -1,9 +1,4 @@
 #include <stdio.h>
-
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
     int a;
     scanf("%d", &a);
@@ -16,7 +11,7 @@ int main() {
         printf("31");
     } else if (a == 4) {
         printf("30");
-    } else i (a == 5) {
+    } else if (a == 5) {
         printf("31"); 
     } else if (a == 6) {
         printf("30");
