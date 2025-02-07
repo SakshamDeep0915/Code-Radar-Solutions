@@ -15,9 +15,9 @@ int main() {
     } else if (operator == '/') {
         if (num2 != 0) 
             result = num1 / num2;
-        else
+        else {
             printf("error");
-            return 1;
+            return 1; }
        } else {
             printf("error");
         }
