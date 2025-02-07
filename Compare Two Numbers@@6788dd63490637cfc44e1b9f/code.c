@@ -6,12 +6,11 @@ int main() {
 
     if (a == b) {
         printf("Equal");
-    } else if {
-        printf("a > b") {
+    } else if (a > b) {
             printf("First");
         } else {
             printf("Second");
         }
-    }
+    
     return 0;
 }
