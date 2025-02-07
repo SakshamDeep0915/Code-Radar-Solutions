@@ -8,8 +8,7 @@ int main() {
         printf("Divisible");
     } else if (0 / 5 & 0 / 11) {
         printf("Divisible");
-    } 
-    else {
+    }  else {
         printf("Not Divisible");
     }
     return 0;
