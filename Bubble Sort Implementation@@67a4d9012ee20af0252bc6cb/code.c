@@ -1,54 +1,30 @@
 #include <stdio.h>
 
-void bubbleSort(int arr[], int n) {
-    int i, j, temp;
-    int swapped; 
-
-    for (i = 0; i < n - 1; i++) {
-        swapped = 0; 
-
-        for (j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-            
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                swapped = 1; 
+void sortArray(int arr[], int size) {
+    int temp;
+    for (int i=0; i<size-1; i++) {
+        for (int j=1+1; j<size; j++) {
+            if (arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
-
-
-        if (swapped == 0) {
-            break;
-        }
     }
 }
-
-
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
 
 int main() {
     int n;
     scanf("%d", &n);
 
-    int arr[n]; 
-    printf("%d ", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    int arr[n];
+    for (int i=0; i<n; i++) {
+        scanf("%d", arr[i]);
     }
 
-    printArray(arr, n);
+    sortArray(arr, n);
 
-    bubbleSort(arr, n);
-
-    printf("Sorted array: ");
-    printArray(arr, n);
-
-    return 0;
+    for(int i=0; i<n; i++) {
+        printf("%d ", arr[i]);
+    }
 }
